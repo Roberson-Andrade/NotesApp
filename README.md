@@ -1,4 +1,5 @@
-:spiral_notepad: # NotesApp
+ # NotesApp
+:spiral_notepad:
 
 Aplicação que permite o armazenamento de anotações utilizando localStorage.
 
