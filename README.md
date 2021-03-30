@@ -1,7 +1,7 @@
  # NotesApp
-:spiral_notepad:
 
-Aplicação que permite o armazenamento de anotações utilizando localStorage.
+
+:spiral_notepad: Aplicação que permite o armazenamento de anotações utilizando localStorage. :spiral_notepad:
 
 O usuário pode criar uma anotação preenchendo os campos de "título" e "descrição", escolher uma cor de fundo, reordenar as anotações da forma que desejar, selecionar e alterar o conteúdo das anotações e apagar as anotações indesejáveis. Os dados permanecem na aplicação mesmo depois de fechar a aplicação em função do armazenamento em localStorage.
 
