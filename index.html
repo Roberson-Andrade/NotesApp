@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>NotesApp</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/896349a9d5.js" crossorigin="anonymous"></script>
+    <style>
+      .borda {
+        border:1px solid red;
+      }
+
+      .card {
+        margin:10px;
+        transition: 0.5s;
+
+      }
+
+      .cardSelected {
+        box-shadow: 0px 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+        transform: translate(0, -30px);
+      }
+
+      .btn {
+        margin: 3px 3px 0px 3px;
+      }
+    </style>
+  </head>
+
+
+  <body onload="carregaNotas()">
+    <header>
+      <nav class="navbar navbar-dark bg-secondary">
+        <div class="container-fluid d-flex justify-content-center">
+          
+            <a class="navbar-brand" href="#">NotesApp</a>
+          
+        </div>
+        
+      </nav>
+    </header> 
+
+    <div class="container mt-3">
+      <div class="row justify-content-center">
+        <h5 class="display-4 mt">Crie uma anotação!</h5>
+        <div class="input-group input-group-md ">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Título</span>
+          </div>
+          <input class="form-control " id="titulo">
+        </div>
+
+        <div class="input-group input-group-md mt-3 ">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Descrição</span>
+          </div>
+          <input class="form-control " id="descricao">
+        </div>
+
+        <select id="cor" class="custom-select mt-3">
+          <option value="bg-light" selected>Selecione uma cor</option>
+          <option value="text-white bg-danger">Vermelho</option>
+          <option value="text-white bg-success">Verde</option>
+          <option value="text-white bg-secondary">Cinza</option>
+          <option value="text-white bg-primary">Azul</option>
+          <option value="bg-light">branco</option>
+          <option value="text-white bg-dark">preto</option>
+        </select>
+
+        <button class="btn btn-primary mt-3" onclick="criarAnotacao(); carregaNotas('adicionar')">Criar Anotação</button>
+      </div>
+
+      
+      <div id="card-list" class="d-flex flex-wrap justify-content-center justify-content-lg-start ">
+      </div>
+
+    </div>
+    
+
+    
+    
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  </html>
